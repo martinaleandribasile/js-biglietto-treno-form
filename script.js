@@ -19,7 +19,7 @@ const ticket = document.getElementById("blockticket");
 
 inviodati.addEventListener("click", function () {
     ticket.classList.remove("schermo");
-    identificativo.innerHTML = inputName.value + inputSurname.value;
+    identificativo.innerHTML = `${inputName.value}  ${inputSurname.value}`;
     ticketKm.innerHTML = inputKm.value;
     ticketData.innerHTML = inputData.value
     const price = inputKm.value * 0.21;
