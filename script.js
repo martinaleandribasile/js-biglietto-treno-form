@@ -24,6 +24,7 @@ inviodati.addEventListener("click", function () {
     ticketData.innerHTML = inputData.value
     const price = inputKm.value * 0.21;
     ticketPrice.innerHTML = price.toFixed(2) + " &#8364;";
+    ticketDiscounttext.innerHTML += "Nessuno sconto da applcare";
     if (inputAge.value < 18) {
         ticketPrice.classList.add("styleprice")
         const sconto20 = price - (price * 20 / 100);
