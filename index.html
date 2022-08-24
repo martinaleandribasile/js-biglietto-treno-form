@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>TicketTrain</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="navbar-brand" href="#">
+                <img class="size" src="icon-trenitalia.png" alt="">
+                <p class="d-inline text-primary">TRENITALIA</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Chi Siamo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Offerte</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid gap-5">
+        <div class="row my-4">
+            <div class="col-12">
+                <h1 class="text-danger">ACQUISTA IL TUO BIGLIETTO</h1>
+            </div>
+        </div>
+        <div class="row justify-content-around gy-3">
+            <div class="col-auto">
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+            </div>
+            <div class="col-auto">
+                <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+            </div>
+            <div class="col-auto">
+                <input type="number" class="form-control" id="inputAge" placeholder="Age">
+            </div>
+            <div class="col-auto">
+                <input type="date" class="form-control" id="inputDate" placeholder="Data del viaggio">
+            </div>
+            <div class="col-auto">
+                <input type="number" class="form-control" id="inputKm" placeholder="Km che vuoi percorrere ">
+            </div>
+            <div class="col-auto">
+                <button id="button" class="btn btn-primary mb-3">Calculate the Ticket</button>
+            </div>
+        </div>
+        <div class="card row m-3 schermo" id="blockticket">
+            <div class="card-header text-danger fw-bold">
+                IL TUO BIGLIETTO
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+                <h2 id="identificativo" class="Identificativo py-3"></h2>
+                <div class="row w-100 d-flex justify-content-between py-5">
+                    <div class="col-auto d-column align-items-center">
+                        <h6 class="text-center border border-dark p-2 mb-3">Data di partenza</h6>
+                        <p id="dateTicket" class="text-center border border-3 border-info p-2">
+                        </p>
+                    </div>
+                    <div class="col-auto d-column align-items-center">
+                        <h6 class="text-center border border-dark p-2 mb-3">Chilometri da Percorrere</h6>
+                        <p id="kmTicket" class="text-center border border-3 border-info p-2"></p>
+                    </div>
+                    <div class="col-auto d-column align-items-center">
+                        <h6 class="text-center border border-dark p-2 mb-3">Prezzo intero Biglietto</h6>
+                        <p id="PriceTicket" class="text-center border border-3 border-info p-2"></p>
+                    </div>
+                    <div class="col-auto d-column align-items-center">
+                        <h6 class="text-center border border-dark p-2 mb-3">Prezzo scontato secondo le normative</h6>
+                        <div class="div d-flex flex-column text-center border border-3 border-info p-2">
+                            <p id="DiscountTickettext" class=" text-danger">
+                            </p>
+                            <span id="DiscountTicket"></span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class=" my-3 btn btn-primary justify-item-end">ACQUISTA</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

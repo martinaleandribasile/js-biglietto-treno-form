@@ -1,0 +1,16 @@
+.size {
+    width: 50px;
+    height: auto;
+}
+
+.schermo {
+    display: none !important;
+}
+
+.identificativo {
+    text-transform: capitalize;
+}
+
+.styleprice {
+    text-decoration: line-through;
+}
