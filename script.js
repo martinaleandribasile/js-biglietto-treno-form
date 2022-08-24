@@ -1,7 +1,6 @@
 console.log("ok js")
 
 const inputName = document.getElementById("inputName");
-console.log(inputName.value);
 const inputSurname = document.getElementById("inputSurname");
 const inputAge = document.getElementById("inputAge");
 const inputData = document.getElementById("inputDate");
